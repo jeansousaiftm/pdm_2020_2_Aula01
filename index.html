@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+
+        <!--<meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">-->
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+        <meta name="color-scheme" content="light dark">
+        <!--<link rel="stylesheet" href="css/index.css">-->
+		<link rel="stylesheet" href="css/default.css" />
+		<link rel="stylesheet" href="css/materialize.css" />
+        <title>Hello World</title>
+    </head>
+    <body>
+		<div class="green lighten-1 white-text valign-wrapper">
+			<h3 class="titulo">Futebol Info</h3>
+		</div>
+		<ul class="tabs green lighten-1">
+			<li class="tab">
+				<a class="white-text waves-effect waves-light" href="#sp">SP</a>
+			</li>
+			<li class="tab">
+				<a class="white-text waves-effect waves-light" href="#mg">MG</a>
+			</li>
+		</ul>
+		
+		<section id="sp">
+			<ul class="collapsible">
+				<li>
+					<div class="collapsible-header green darken-4 white-text">Palmeiras</div>
+					<div class="collapsible-body row">
+						<div class="col s3">
+							<img src="img/escudos/palmeiras.png" class="responsive-img"/>
+						</div>
+						<div class="col s9">
+							A Sociedade Esportiva Palmeiras é um clube fundado em 26 de agosto de 1914.
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="collapsible-header grey darken-4 white-text">Corinthians</div>
+					<div class="collapsible-body row">
+						<div class="col s3">
+							<img src="img/escudos/corinthians.png" class="responsive-img"/>
+						</div>
+						<div class="col s9">
+							O Sport Club Corinthians Paulista foi fundado em 1 de setembro de 1910.
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="collapsible-header white darken-4">São Paulo</div>
+					<div class="collapsible-body row">
+						<div class="col s3">
+							<img src="img/escudos/spfc.png" class="responsive-img"/>
+						</div>
+						<div class="col s9">
+							O São Paulo Futebol Clube foi fundado em 25 de janeiro de 1930.
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="collapsible-header grey darken-4 white-text">Santos</div>
+					<div class="collapsible-body row">
+						<div class="col s3">
+							<img src="img/escudos/santos.png" class="responsive-img"/>
+						</div>
+						<div class="col s9">
+							O Santos Futebol Clube foi fundado em 14 de abril de 1912.
+						</div>
+					</div>
+				</li>
+			</ul>
+		</section>
+
+		<section id="mg">
+			<ul class="collapsible">
+				<li>
+					<div class="collapsible-header blue darken-4 white-text">Cruzeiro</div>
+					<div class="collapsible-body row">
+						<div class="col s3">
+							<img src="img/escudos/cruzeiro.png" class="responsive-img"/>
+						</div>
+						<div class="col s9">
+							O Cruzeiro Esporte Clube é um clube fundado em 2 de janeiro de 1921.
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="collapsible-header grey darken-4 white-text">Atlético</div>
+					<div class="collapsible-body row">
+						<div class="col s3">
+							<img src="img/escudos/atletico.png" class="responsive-img"/>
+						</div>
+						<div class="col s9">
+							O Clube Atlético Mineiro foi fundado em 25 de março de 1908.
+						</div>
+					</div>
+				</li>
+			</ul>
+		</section>
+
+        <!--<script src="cordova.js"></script>
+        <script src="js/index.js"></script>-->
+		<script src="js/jquery.js"></script>
+		<script src="js/materialize.js"></script>
+		<script>
+			$(document).ready(function() {
+				$(".tabs").tabs();
+				$(".collapsible").collapsible();
+			});
+		</script>
+    </body>
+</html>
